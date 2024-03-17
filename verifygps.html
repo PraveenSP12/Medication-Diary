@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gpsphoto.css">
+    <title>Photo Upload</title>
+</head>
+<body>
+    <header>
+        <h1>Verify Uploaded Images</h1>
+            <a href="#" class="logo"></a>
+            <nav>
+                <a href="test.html">Home</a>
+                <a href="loginpage.html">Login</a>
+                <a href="medschedule.html">Schedules</a>
+                <a href="gpsphoto.html">Upload</a>
+                <a href="#about">About</a>
+            </nav>
+    </header>
+    <main>
+        <section id="photo-upload">
+            <form action = "verifyimage.php" method = "POST">
+                <label for="photo-input">View Images</label>
+                <input type="integer" id="medication-name" name = "image_id" required>
+                <img src="verifyimage.php">
+
+                <button type="submit" >Verify Images</button>
+                <div id="status-message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="gpsphoto.js"></script>
+</body>
+</html>
+
+

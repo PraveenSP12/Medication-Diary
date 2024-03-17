@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medschedule.css">
+    <title>Medication Schedule</title>
+    <style>
+        /* Add space between buttons */
+        .logo .logos{
+            margin-right: 28px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Medication Schedule </h1>
+            <a href="#" class="logo"></a>
+            <nav>
+                <a href="test.html" class="logos" >Home</a>
+                <a href="loginpage.html" class="logos" >Login</a>
+                <a href="medschedule.html" class="logos" >Schedules</a>
+                <a href="gpsphoto.html" class="logos" >Upload</a>
+                <a href="#about">About</a>
+            </nav>
+    </header>
+    <main>
+        <section id="medication-list">
+            <ul id="medication-items">
+                <!-- Medication items will be dynamically added here -->
+            </ul>
+        </section>
+        <section id="add-medication">
+            <h2>Add Medication</h2>
+            <form id="medication-form">
+                <label for="medication-name">Medication Name</label>
+                <input type="text" id="medication-name" required>
+
+                <label for="medication-time">Medication Time</label>
+                <input type="time" id="medication-time" required>
+
+                <button type="button" onclick="addMedication()">Add Medication</button>
+            </form>
+        </section>
+    </main>
+    <script src="medschedule.js"></script>
+</body>
+</html>

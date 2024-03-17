@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+a:hover,
+nav a.active {
+    color: #0ef;
+    transition: 0.3s;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#medication-list {
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#medication-items {
+    list-style: none;
+    padding: 0;
+}
+
+#medication-items li {
+    border-bottom: 1px solid #ddd;
+    border-radius: 3rem;
+    padding:9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#medication-items li{
+    background-color: #ffffff;
+}
+
+#add-medication {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.215);
+    padding-left: 13%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.547);
+    display: flex;
+    align-items: center;
+    width: 3rem;
+}
+
+#medication-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#medication-form label {
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#medication-form input,
+#medication-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#medication-form button {
+    background-color: #2ecc71;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style:inset;
+    border-radius: 2rem;
+}
+
+#medication-form button:hover {
+    background-color: #27ae60;
+}
